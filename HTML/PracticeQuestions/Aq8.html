@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Question 8</title>
+</head>
+<body>
+    <form action="/server">
+        <div>
+            <label for="name">Name : </label>
+            <input type="text" id="name"/>
+        </div>
+        <div>
+            Sex : 
+            <input
+                id="Male"
+                type="radio"
+            />
+            <label for="male">Male</label>
+            <input
+                id="female"
+                type="radio"
+            />
+            <label for="female">Female</label>
+        </div>
+        <div>
+            Country : 
+            <select name="country">
+                <option>Select an option</option>
+                <option val="ind">India</option>
+                <option val="nep">Nepal</option>
+                <option val="usa">USA</option>
+                <option val="can">Canada</option>
+            </select>
+        </div>
+        <div>
+            <label for="mess">Message :</label><br>
+            <textarea
+                id="mess"
+                name="message"
+                rows="5"
+                cols="25"                                                                                                                                                                                                                                                                                                                                                                                                                         
+            ></textarea>
+        </div>
+        <div>
+            <input type="checkbox" id="sub" />
+            <label for="sub"> Subscribe ?</label>
+        </div>
+        <button type="submit">Submit                                                                                          </button>
+    </form>
+</body>
+</html>
