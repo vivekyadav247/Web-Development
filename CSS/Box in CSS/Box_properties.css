@@ -1,0 +1,30 @@
+div{
+    height : 500px ;
+    width : 200px ;
+    background-color: palevioletred;
+    border-width : 5px ;
+    border-style : solid ;
+    border-color : black ;
+    margin-left : 50px ;
+    border-top-right-radius : 15px ;
+    border-bottom-left-radius: 15px ;
+    padding-left : 20px ;
+    padding-right: 20px ;
+    padding-top : 10px ;
+    padding-bottom: 10px ;
+    display : inline-block ;
+}
+button{
+    font-size : 1rem ;
+    border-radius : 15px ;
+    background-color : goldenrod;
+}
+h1{
+    text-align : center ;
+    text-decoration : underline ;
+}
+div1{
+    display: block ;
+    margin-top: 50px ;
+    margin-left : 40% ;
+}
