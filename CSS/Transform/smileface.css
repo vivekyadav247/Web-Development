@@ -1,0 +1,38 @@
+.face{
+    height : 400px ;
+    width : 400px ;
+    background-color : rgb(245, 190, 25) ;
+    border-radius : 50% ;
+    display: inline-block;
+    margin-left : 200px ;
+    margin-top : 200px ;
+}
+.lefteye , .righteye{
+    height : 50px ;
+    width : 50px ;
+    background-color: black ;
+    display: inline-block ;
+    border-radius: 50%;
+    transform : translate(75px , 100px) ;
+}
+.righteye{
+    transform : translate(200px , 100px) ;
+}
+.mouth{
+    height: 100px;
+    width : 200px ;
+    border-bottom : 10px solid black ;
+    border-radius: 50%;
+    position: relative;
+    top : 140px ;
+    left : 90px ;
+}
+.mouth:hover{
+    height: 70px;
+    width : 200px ;
+    border-bottom : 0px ;
+    border-top: 10px solid black;
+    position: relative;
+    top : 210px ;
+    left : 90px ;    
+}

@@ -1,0 +1,26 @@
+div{
+    height : 50px ;
+    width : 200px ;
+    margin: 70px ;
+    border : 2px solid black ;
+}
+#one{
+    background-color : green ;
+    transform : rotate(45deg) ;
+}
+#two{
+    background-color : yellow ;
+    transform : scale(1.5) ;
+}
+#three{
+    background-color : orange ;
+    transform : translate(100px,50px) ;
+}
+#four{
+    background-color : red ;
+    transform: translateX(300px) ;
+}
+#five{
+    background-color : grey ;
+    transform: skew(30deg) ;
+}
