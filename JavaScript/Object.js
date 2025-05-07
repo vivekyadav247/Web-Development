@@ -81,4 +81,4 @@ console.log(Math.pow(2,5))    // second ele is power of first ele
 console.log(Math.floor(1.79823))  // nearest smaller integer is output of given float
 console.log(Math.ceil(1.42134))  // nearest greater integer is output of given float 
 console.log(Math.random())  // Give Random Value form (0 to 1) in double
-
+console.log(Math.random()*10+1) // Give random value btw 1 to 10
