@@ -20,4 +20,58 @@ try{
     console.log(err)
 }
 
-// 
+// Arrow Function
+// exaples
+const sum = (a,b) => {
+    return a+b ;
+}
+console.log(sum(34,25)) 
+
+const cube = (n) => {
+    return n ** 3 ;
+}
+console.log(cube(5)) 
+
+const pow = (a,b) => {
+    return a ** b ;
+}
+console.log(pow(34,6)) 
+
+// Arrow Function with Implicit return
+// example
+const mul = (a,b) =>  a * b 
+console.log(mul(3,6))
+
+// Set Timeout
+// syntax : setTimeout(function,time)
+console.log("Hii bro")
+setTimeout(()=>{
+    console.log("Welcome !!")
+},2000)
+console.log("This is my havelly !")
+
+
+// Set Interval
+// syntax : setInterval(function,time)
+let id = setInterval(() => {
+    console.log("Ram Ram !")
+},100) ;
+console.log("Bhaiyo ")
+clearInterval(id)  // this is for stooping setInterval function
+
+
+// this with Arrow Function
+const students = {
+    name : "Vivek Yadav",
+    gender : "M",
+    age : 19 ,
+    prop : this , // global scope
+    getName : function (){
+        console.log(this) 
+        return this.name 
+    },
+    getAge : () => {
+        console.log(this)
+        return this.age 
+    }
+} 
