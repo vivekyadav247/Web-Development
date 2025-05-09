@@ -71,3 +71,64 @@ function concat(str1){
 console.log(concat(str))
 
 
+// Function Expression 
+const sum1 = function(a,b){
+    return a+b ;
+}
+
+console.log(sum1(5,2)) 
+
+
+/// High Order Function 
+// Take one or multiple functions as arguments
+function multipleGreet(func , n){
+    for(let i=0; i<n; i++){
+        func();
+    }
+}
+const greet = function(){
+    console.log("Ram Ram")
+}
+multipleGreet(greet,100) 
+
+// Return a Function 
+function oddOrEvenFactory(request){
+    if(request=="odd"){
+        let odd = function(n){
+            console.log(!(n%2==0))
+        }
+        return odd 
+    }
+    else if(request=="even"){
+        let even = function(n){
+            console.log((n%2==0))
+        }
+        return even  
+    }
+    else console.log("Wrong Request") 
+}
+let request = "odd" // even 
+
+
+// Methods
+const calculator = {
+    add : function(a,b){
+        return a + b ;
+    },
+    sub : function(a,b){
+        return a - b ;
+    },
+    mult : function(a,b){
+        return a*b 
+    }
+}
+
+// Methods (ShortHand)
+const calc = {
+    add(a,b){
+        return a+b;
+    },
+    sub(a,b){
+        return a-b;
+    }
+}
