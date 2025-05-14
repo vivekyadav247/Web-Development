@@ -1,5 +1,4 @@
 body{
-    margin-top: 6rem;
     text-align : center ;
 }
 
@@ -12,6 +11,8 @@ body{
 }
 
 .mainbox{
+    height : 650px ;
+    width : 600px ;
     margin: auto;
     border : 5px solid black
 }
