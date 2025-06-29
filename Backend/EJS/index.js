@@ -17,9 +17,14 @@ app.get("/rolldice",(req,res) => {
 }) ;
 
 app.get("/ig/:username",(req,res) => {
-    let followers = ["adam", "eve", "john", "doe"] ;
-    let { username } = req.params ;
-    res.render("insta.ejs", { username , followers }) ;
+    let {username} = req.params ;
+    const instadata = require("./data.json") ;
+    const data = instadata[username] ;
+    if (data) {
+        res.render("insta.ejs", { data }) ;
+    } else {
+        res.status(404).send("User not found") ;
+    }
 });
 
 app.get("/home",(req,res) => {

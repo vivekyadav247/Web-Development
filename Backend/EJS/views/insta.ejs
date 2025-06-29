@@ -1,18 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Insta Page</title>
-</head>
+<%- include("include/head.ejs") %>
 <body>
-    <h1>Username : @<%= username %></h1>
+    <h1>Username : @<%= data.name %></h1>
+    <h2>Followers : <%= data.followers %> &nbsp; &nbsp; &nbsp; &nbsp; Following : <%= data.following %></h2>
     <button>Follow</button> <button>Message</button>
-    <h2>Followers</h2>
-    <ul>
-        <% for (let name of followers) { %>
-            <li><%= name %></li>
+    
+    <h3>Posts</h3>
+    <div>
+        <% for (let post of data.posts){ %>
+            <div class="posts">
+                <img src="<%= post.image %>"/>
+                <h4>Likes : <%= post.likes %> &nbsp;&nbsp;&nbsp;&nbsp; Comments : <%=post.likes%> </h4>
+            </div>            
         <% } %>
-    </ul>
+    </div>
 </body>
 </html>
